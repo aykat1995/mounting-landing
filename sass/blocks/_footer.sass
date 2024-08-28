@@ -1,0 +1,82 @@
+.footer
+  background-color: #000
+  padding: 50px 0
+  &-block
+    display: flex
+    justify-content: space-between
+    &__address
+      color: #fdfcfc
+      font-family: "Proxima Nova Regular"
+      font-size: 20px
+      line-height: 28px
+
+.social
+  display: inline-block
+  width: 26px
+  height: 26px
+  background-color: #fff
+  border-radius: 100%
+  margin-right: 10px
+  &:hover
+    background-color: $main-color
+  .social-icon
+    width: 16px
+    height: 16px
+    display: block
+    margin: auto
+    margin-top: 4px
+    &-special
+      width: 17px
+      height: 17px
+
+.link 
+  display: inline-block 
+  margin-right: 40px
+  &:last-child
+    margin-right: 0 
+  a
+    color: #fefefe
+    font-family: "Proxima Nova Regular"
+    font-size: 18px
+    font-weight: 400
+    line-height: 40px
+@media (max-width: 991px)
+  .footer
+    &-block
+      flex-wrap: wrap
+      &__address
+        font-size: 16px
+        line-height: 18px
+  .link
+    a
+      font-size: 16px 
+  .social
+    &:hover
+      background-color: #fff    
+
+@media (max-width: 567px)
+  .footer
+    padding: 25px 
+    &-block
+      flex-wrap: wrap
+      &__address
+        font-size: 16px
+        line-height: 18px
+  .social
+    margin-top: 20px
+    margin-bottom: 10px
+  .link
+    a
+      font-size: 16px 
+
+@media (max-width: 567px)
+  .footer
+    &-block
+      &__address
+        font-size: 16px
+        line-height: 18px
+    &-special
+      display: block    
+  .link 
+    a
+      font-size: 14px

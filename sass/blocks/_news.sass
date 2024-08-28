@@ -1,0 +1,91 @@
+.news
+  background-color: $grey-bg
+  &__button
+    padding: 20px 44px
+    color: #020202
+    font-family: "Proxima Nova Regular"
+    font-size: 20px
+    display: block
+    margin: 60px auto 0
+  &-block
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    &__item
+      margin-bottom: 30px
+    &__img
+      display: block
+      width: 377px
+      height: 279px
+    &__title
+      color: #020202
+      font-family: "Proxima Nova Semibold"
+      font-size: 20px
+      font-weight: 700
+      line-height: 25px
+      margin-top: 20px
+      margin-bottom: 20px
+      text-transform: uppercase
+      display: inline-block
+    &__text
+      opacity: 0.83
+      color: #020202
+      font-family: "Proxima Nova Regular"
+      font-size: 18px
+      font-weight: 400
+      line-height: 25px  
+      max-width: 323px
+    &__data
+      font-size: 16px
+      font-family: "Proxima Nova Light"
+      font-weight: 300
+      color: #010101
+      line-height: 18px
+      margin-left: 60px
+      .special
+        font-family: "Proxima Nova Semibold"
+        background-color: $main-color
+        padding: 3px
+        margin-right: 2px   
+
+// .news-block__text
+//   &:hover
+//     text-decoration: underline   
+//   &:hover
+//     .news-block__title
+//       text-decoration: underline
+  
+// .news-block__title
+//   &:hover
+//     text-decoration: underline   
+//   &:hover
+//     .news-block__text
+//       text-decoration: underline         
+ 
+          
+@media (max-width: 1200px)
+  .news
+    &__button
+      margin-top: 40px
+    &-block
+      flex-wrap: wrap
+      justify-content: space-around
+@media (max-width: 567px)
+  .news
+    margin-top: 70px
+    &-block
+      &__img
+        width: 280px
+        height: 207px
+      &__data
+        margin-left: 30px  
+      &__title
+        font-size: 16px  
+      &__text
+        font-size: 15px
+        line-height: 16px
+        max-width: 280px
+    &__button
+      margin-top: 0
+      font-size: 16px
+      padding: 20px 30px  

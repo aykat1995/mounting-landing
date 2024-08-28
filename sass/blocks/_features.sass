@@ -1,0 +1,171 @@
+.features
+  height: 563px
+  background: #fff
+  position: relative
+  padding-left: 0
+  padding-right: 0
+  &::before
+    position: absolute
+    content: ''
+    left: 0
+    top: 0
+    width: 60%
+    max-width: 860px
+    background: $grey-bg
+    height: 100%  
+  &-block
+    display: flex
+    justify-content: space-between  
+  &-left
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap  
+    flex-basis: 55%
+    text-align: center
+    z-index: 3
+    &__item
+      width: 198px
+      height: 168px
+      background-color: #fff
+      margin-bottom: 36px
+      padding-top: 20px
+    &__text
+      display: block  
+      color: #020202
+      font-family: "Proxima Nova Regular"
+      font-size: 18px
+      font-weight: 400
+      line-height: 23px
+      text-transform: uppercase
+    &__img
+      display: block
+      margin: 16px auto 20px
+      &-special
+        margin-bottom: 30px
+  &-right
+    flex-basis: 37%
+    z-index: 1
+    &__item
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin-bottom: 40px
+      &-special-1
+        width: 348px
+        margin-bottom: 50px
+      &-special-2  
+        width: 335px
+    &__number
+      color: $main-color
+      font-family: "Proxima Nova Black"
+      font-size: 35px
+      line-height: 25px
+      text-transform: uppercase 
+    &__dash
+      font-size: 32px
+      display: block
+      margin-right: 20px
+      margin-left: 20px
+    &__text
+      color: #020202
+      font-family: "Proxima Nova Semibold"
+      font-size: 20px
+      line-height: 25px
+      display: block
+      margin-top: 20px
+      &-special
+        margin-top: 5px
+
+@media (max-width: 1200px)
+  .features
+    height: 750px
+    &::before
+      width: 58%
+    &-right
+      margin-top: 50px  
+
+@media (max-width:991px)
+  .features
+    background-color: $grey-bg
+    height: 1000px
+    padding-top: 50px 
+    padding-bottom: 50px
+    &::before
+      display: none
+    &-block
+      flex-wrap: wrap
+    &-left
+      flex-basis: 100%  
+    &-right
+      margin: 0 auto
+      &__item
+        margin-bottom: 20px
+        width: 500px  
+        &-special-1
+          width: 348px
+          margin-bottom: 30px
+        &-special-2  
+          width: 335px
+          margin-bottom: 30px
+      &__text
+        line-height: 20px    
+@media (max-width: 680px) 
+  .features
+    height: 860px
+    &-left
+      justify-content: space-around  
+      &__item
+        margin-bottom: 10px  
+@media (max-width: 567px)            
+  .features
+    height: 1380px
+    margin-top: 70px
+    &-right 
+      &__item
+        margin-bottom: 10px
+        width: 330px  
+        &-special-1
+          width: 290px
+          margin-top: 20px
+          margin-bottom: 30px
+        &-special-2  
+          width: 280px
+          margin-bottom: 20px
+      &__number
+        font-size: 28px
+        line-height: 25px
+        text-transform: uppercase   
+        display: inline-block
+      &__text
+        color: #020202
+        font-family: "Proxima Nova Semibold"
+        font-size: 18px
+        line-height: 18px
+      &__dash
+        font-size: 20px
+        margin-right: 10px
+        margin-left: 10px  
+@media (max-width: 387px)
+  .features
+    height: 1400px
+    &-right
+      &__item
+        margin-bottom: 20px
+        width: 280px  
+        &-special-1
+          width: 250px
+          margin-bottom: 30px
+        &-special-2  
+          width: 240px
+        &-first
+          margin-bottom: 5px  
+      &__text
+        font-size: 16px
+      &__number
+        font-size: 22px
+      &__dash
+        margin-left: 5px
+        margin-right: 5px  
+
+
+      
